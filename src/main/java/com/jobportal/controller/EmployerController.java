@@ -52,7 +52,7 @@ public class EmployerController {
 	@PostMapping("/register")
 	public ResponseEntity<?> registerEmployer(@Valid @ModelAttribute EmployerRegisterRequest request) {
 		try {
-			registerEmployer(request);
+			employerService.registerEmployer(request);
 			return ResponseEntity.status(HttpStatus.CREATED).body("success");
 		} catch (Exception e) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST)

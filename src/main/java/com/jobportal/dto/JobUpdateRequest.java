@@ -14,6 +14,6 @@ public class JobUpdateRequest {
 
     private String location;
     private String skillsRequired;
-    private Double salary;
+    private String salary;
 
 }

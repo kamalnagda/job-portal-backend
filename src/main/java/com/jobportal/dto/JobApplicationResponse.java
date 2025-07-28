@@ -13,7 +13,7 @@ public class JobApplicationResponse {
     private String description;
     private String location;
     private String skillsRequired;
-    private Double salary;
+    private String salary;
     private LocalDateTime postedAt;
 
     private String status; 
